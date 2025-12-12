@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/tag web.css">
+        <title>Ultimate HTML:5 text-tags</title>
+</head>
+
+<body>
+        <header>
+                <h1>All Text Tags</h1>
+                <a href="../tag web.html" style="color:black; text-decoration: none;">⬅ Back to Main Page</a>
+                <div class="search-container">
+                        <input type="text" id="searchBar" placeholder="Search tag..." onkeyup="searchTag()">
+                </div>
+        </header>
+
+        <section>
+                <div class="tag-card" data-tag="All Headings" onclick="openModal('All Headings')">All Headings <span
+                                class="tooltip"> Click For more
+                                Info</span></div>
+                <div class="tag-card" onclick="openModal('em')">&lt;em&gt; em <span class="tooltip"> Click For more
+                                Info</span>
+                </div>
+                <div class="tag-card" onclick="openModal('h2')">&lt;h2&gt; Subheading <span class="tooltip"> Click For
+                                more
+                                Info</span></div>
+                <div class="tag-card" onclick="openModal('hr')">&lt;hr&gt; hr <span class="tooltip"> Click For more
+                                Info</span>
+                </div>
+                <div class="tag-card" onclick="openModal('br')">&lt;br&gt; br <span class="tooltip"> Click For more
+                                Info</span>
+                </div>
+                <div class="tag-card" onclick="openModal('i')">&lt;i&gt; Italic <span class="tooltip"> Click For more
+                                Info</span></div>
+                <div class="tag-card" onclick="openModal('u')">&lt;u&gt; Underline <span class="tooltip"> Click For more
+                                Info</span></div>
+                <div class="tag-card" onclick="openModal('mark')">&lt;mark&gt; Highlight <span class="tooltip"> Click
+                                For more
+                                Info</span></div>
+                <div class="tag-card" onclick="openModal('small')">&lt;small&gt; Small Text <span class="tooltip"> Click
+                                For
+                                more Info</span></div>
+                <div class="tag-card" onclick="openModal('sup')">&lt;sup&gt; Superscript <span class="tooltip"> Click
+                                For more
+                                Info</span></div>
+                <div class="tag-card" onclick="openModal('sub')">&lt;sub&gt; Subscript <span class="tooltip"> Click For
+                                more
+                                Info</span></div>
+        </section>
+
+        <!-- Modal -->
+        <div id="modal" style="display:none;">
+                <div id="modal-content">
+                        <span id="close-modal" onclick="closeModal()">&times;</span>
+                        <h3 id="modal-title">Tag Name</h3>
+                        <p id="modal-history">History & Modern Use</p>
+
+                        <h4>Example Code (Editable)</h4>
+                        <textarea id="modal-editor"></textarea><br>
+                        <button class="run-btn" onclick="runLiveCode()">Run Code</button>
+                        <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+
+                        <iframe id="live-preview"></iframe>
+
+                        <div class="quiz-section" id="quiz">
+                                <h4>Quiz:</h4>
+                                <p id="quiz-question"></p>
+                                <input type="text" id="quiz-answer" placeholder="Type your answer here">
+                                <button class="quiz-btn" onclick="checkAnswer()">Check Answer</button>
+                                <p id="quiz-feedback"></p>
+                        </div>
+                </div>
+        </div>
+        <script src="../js/text-tag.js"></script>
+</body>
+
+</html>

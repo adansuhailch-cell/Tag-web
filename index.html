@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate HTML Playground</title>
+  <link rel="stylesheet" href="../css/tag web.css">
+</head>
+
+<body>
+  <div id="entry-overlay">
+    <div class="entry-box">
+      <h2>Ready to learn?</h2>
+      <p>If you're willing to learn something new, enter. Otherwise, head to Social media,enjoy and waste your Time.</p>
+      <div class="entry-actions">
+        <button id="enter-btn">I'm willing — enter</button>
+        <button id="reject-btn" class="outline">No thanks — go to Social Media</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <h1>Ultimate HTML Playground</h1>
+    <div class="logo">
+      <h1>Tag web</h1>
+
+      <img src="/assets/tag web logo.png" alt="Tag Web logo" class="dra-LOGO">
+      <span class="brand-wordmark">Tag Web</span>
+      </a>
+    </div>
+    <nav>
+      <a href="#text">Text</a>
+      <a href="#links">Links</a>
+      <a href="#lists">Lists</a>
+      <a href="#forms">Forms</a>
+      <a href="#media">Media</a>
+      <a href="#Semantic Tags">Semantic Tags</a>
+      <a href="#tables">Tables</a>
+      <a href="#Other-tags">Other html:5 tags</a>
+      <a href="/css part.html">New CSS Tags</a>
+      <a href="/colourpicker.html">🎨 Want to play with colors?</a>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search tag..." onkeyup="searchTag()">
+    </div>
+  </header>
+
+  <section id="text">
+    <h2>Text Tags</h2>
+    <div class="tag-card" data-tag="!DOCTYPE" onclick="openModal('!doctype')">&lt;!doctype&gt;<span
+        class="tooltip">Click for more details</span></div>
+    <div class="tag-card" data-tag="h1" onclick="openModal('h1')">&lt;h1&gt; Heading <span class="tooltip">Click for
+        details</span>
+    </div>
+
+    <div class="tag-card" data-tag="Paragraph" onclick="openModal('p')">&lt;p&gt; Paragraph <span class="tooltip">Click
+        for details</span>
+    </div>
+    <div class="tag-card" data-tag="bold" onclick="openModal('b')">&lt;b&gt; Bold <span class="tooltip">Click for
+        details</span></div>
+    <a href="../pages/text-tag.html"
+      style="display:block; margin-top:10px; color:#16a085; font-weight:bold; text-decoration:none;">
+      ➕ Click here to view and enjoy more tags
+    </a>
+  </section>
+
+  <section id="links">
+    <h2>Link Tags</h2>
+    <div class="tag-card" data-tag="Anchor" onclick="openModal('a')">&lt;a&gt; <span class="tooltip">Click for
+        datails</span> Anchor Link
+    </div>
+    <div class="tag-card" data-tag="Navigation" onclick="openModal('nav')">&lt;nav&gt;<span class="tooltip">Click for
+        details</span>
+      Navigation</div>
+    <div class="tag-card" data-tag="href" onclick="openModal('href')">&lt;href&gt;<span class="tooltip">Click for
+        details</span>
+      Hyperlink Reference</div>
+    <div class="tag-card" data-tag="target" onclick="openModal('target')">&lt;target&gt;<span class="tooltip">Click for
+        details</span>
+      Used for specifying where to open the linked
+      document</div>
+  </section>
+
+  <section id="lists">
+    <h2>List Tags</h2>
+    <div class="tag-card" data-tag="ul" onclick="openModal('ul')">&lt;ul&gt;<span class="tooltip">Click for
+        details</span> Unordered
+      List</div>
+    <div class="tag-card" data-tag="ol" onclick="openModal('ol')">&lt;ol&gt;<span class="tooltip">Click for
+        details</span> Ordered
+      List</div>
+    <div class="tag-card" data-tag="li" onclick="openModal('li')">&lt;li&gt;<span class="tooltip">Click for
+        details</span> Lists item
+    </div>
+    <div class="tag-card" data-tag="dl" onclick="openModal('dl')">&lt;dl&gt;<span class="tooltip"> Click for
+        details</span> Description List</div>
+    <div class="tag-card" data-tag="dt" onclick="openModal('dt')">&lt;dt&gt;<span class="tooltip"> Click for
+        details</span> Description Term</div>
+    <div class="tag-card" data-tag="dd" onclick="openModal('dd')">&lt;dd&gt;<span class="tooltip"> Click for
+        details</span> Description Definition</div>
+  </section>
+
+  <section id="forms">
+    <h2>Form Tags</h2>
+    <div class="tag-card" data-tag="form" onclick="openModal('form')">&lt;form&gt;<span class="tooltip">Click for
+        details</span> Form
+    </div>
+    <div class="tag-card" data-tag="input" onclick="openModal('input')">&lt;input&gt;<span class="tooltip">Click for
+        details</span> Input
+    </div>
+    <a href="/pages/form-tag.html"
+      style="display:block; margin-top:10px; color:#16a085; font-weight:bold; text-decoration:none;">
+      ➕ Click here to view and enjoy more tags
+    </a>
+  </section>
+
+  <section id="media">
+    <h2>Media Tags</h2>
+    <div class="tag-card" data-tag="img" onclick="openModal('img')">&lt;img&gt;<span class="tooltip">Click for
+        details</span> Image
+    </div>
+    <div class="tag-card" data-tag="audio" onclick="openModal('audio')">&lt;audio&gt;<span class="tooltip">Click for
+        details</span> Audio
+    </div>
+    <a href="pages/semantic-media tags.html"
+      style="display:block; margin-top:10px; color:#16a085; font-weight:bold; text-decoration:none;">
+      ➕ Click here to view and enjoy more tags
+    </a>
+  </section>
+
+  <section id="Semantic Tags">
+    <h2>Semantic Tags(modern HTML5)</h2>
+    <div class="tag-card" data-tag="header" onclick="openModal('header')">&lt;header&gt;<span class="tooltip">Click for
+        details</span>
+      Header</div>
+    <div class="tag-card" data-tag="footer" onclick="openModal('footer')">&lt;footer&gt;<span class="tooltip">Click for
+        details</span>
+      Footer</div>
+    <a href="/pages/semantic-media tags.html"
+      style="display:block; margin-top:10px; color:#16a085; font-weight:bold; text-decoration:none;">
+      ➕ Click here to view and enjoy more tags
+    </a>
+  </section>
+
+  <section id="tables">
+    <h2>Table Tags</h2>
+    <div class="tag-card" data-tag="tables" onclick="openModal('table')">&lt;table&gt;<span class="tooltip">Click for
+        details</span> Table
+    </div>
+    <div class="tag-card" data-tag="tr" onclick="openModal('tr')">&lt;tr&gt;<span class="tooltip">Click for
+        details</span> Table Row
+    </div>
+    <div class="tag-card" data-tag="td" onclick="openModal('td')">&lt;td&gt;<span class="tooltip">Click for
+        details</span> Table Data
+      Cell</div>
+    <div class="tag-card" data-tag="Table header" onclick="openModal('th')">&lt;th&gt;<span class="tooltip">Click for
+        details</span> Table
+      Header Cell</div>
+    <div class="tag-card" data-tag="caption" onclick="openModal('caption')">&lt;caption&gt;<span class="tooltip">Click
+        for details</span> Table Caption</div>
+    <div class="tag-card" data-tag="table body" onclick="openModal('tbody')">&lt;tbody&gt;<span class="tooltip">Click
+        for
+        details</span> Table Body</div>
+    <div class="tag-card" data-tag="table foot" onclick="openModal('tfoot')">&lt;tfoot&gt;<span class="tooltip">Click
+        for
+        details</span> Table Footer</div>
+    <div class="tag-card" data-tag="column group" onclick="openModal('colgroup')">&lt;colgroup&gt;<span
+        class="tooltip">Click for details</span> Column Group</div>
+    <div class="tag-card" data-tag="column" onclick="openModal('col')">&lt;col&gt;<span class="tooltip">Click for
+        details</span> Column</div>
+  </section>
+
+  <section id="Other-tags">
+    <h2>Other HTML:5 Tags</h2>
+    <div class="tag-card" data-tag="Citation" onclick="openModal('cite')">&lt;cite&gt;<span class="tooltip">Click for
+        details</span> Citation</div>
+    <div class="tag-card" data-tag="inline quote" onclick="openModal('q')">&lt;q&gt;<span class="tooltip">Click for
+        details</span> Inline quote</div>
+    <div class="tag-card" data-tag="blockquote" onclick="openModal('blockquote')">&lt;blockquote&gt;<span
+        class="tooltip">Click for
+        details</span> Block quote
+    </div>
+    <a href="/pages/other-tags.html"
+      style="display:block; margin-top:10px; color:#16a085; font-weight:bold; text-decoration:none;">
+      ➕ Click here to view and enjoy more tags
+    </a>
+  </section>
+
+  <div id="modal">
+    <div id="modal-content">
+      <span id="close-modal" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title">Tag Name</h3>
+      <p id="modal-history">History & Modern Use</p>
+
+      <h4>Example Code (Editable)</h4>
+      <textarea id="modal-editor"></textarea><br>
+      <button class="run-btn" onclick="runLiveCode()">Run Code</button>
+      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+
+      <iframe id="live-preview"></iframe>
+
+      <div class="quiz-section" id="quiz">
+        <h4>Quiz:</h4>
+        <p id="quiz-question"></p>
+        <input type="text" id="quiz-answer" placeholder="Type your answer here">
+        <button class="quiz-btn" onclick="checkAnswer()">Check Answer</button>
+        <p id="quiz-feedback"></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      document.getElementById('entry-overlay').style.display = 'flex';
+    });
+
+    document.getElementById('enter-btn').addEventListener('click', () => {
+
+      document.getElementById('entry-overlay').style.display = 'none';
+    });
+
+    document.getElementById('reject-btn').addEventListener('click', () => {
+      window.open('https://www.instagram.com/', '_blank');
+    });
+
+
+  </script>
+
+  <button id="scrollTopBtn">⬆</button>
+  <button id="scrollBottomBtn">⬇</button>
+  <script src="tag web.js"></script>
+  <section>
+    <footer class="tag-card">
+      <p>🎨 Want to play with colors?
+        <a href="/colourpicker.html" style="text-decoration: solid; color: #16a085;">Try my Color Picker</a>
+      </p>
+      &copy; 2025 Tag Web. Built with ❤️ for web learners by "Hafiz Adan Suhail" 😎.
+    </footer>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Web — Ultimate HTML Playground</title>
+    <link rel="stylesheet" href="css/tag-web.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/tag-web-icon.svg" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+            color: #1f2937;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .logo span {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #111827;
+        }
+
+        nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .search-container {
+            margin: 24px auto;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+        }
+
+        main {
+            padding: 32px 24px;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="/" class="logo">
+            <img src="assets/tag-web-icon.svg" alt="Tag Web logo" />
+            <span>TAG WEB</span>
+        </a>
+        <nav>
+            <a href="#links">Links</a>
+            <a href="#lists">Lists</a>
+            <a href="#forms">Forms</a>
+            <a href="#media">Media</a>
+            <a href="#semantic">Semantic</a>
+            <a href="#tables">Tables</a>
+            <a href="#css">CSS Tags</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search tag..." />
+    </div>
+
+    <main>
+        <h1>Welcome to Tag Web</h1>
+        <p>Explore HTML tags, learn their purpose, and test live examples. This is your ultimate HTML playground — built
+            for learners, creators, and curious minds.</p>
+    </main>
+
+    <footer>
+        &copy; 2025 Tag Web. Built with ❤️ for web learners.
+    </footer>
+
+</body>
+
+</html>

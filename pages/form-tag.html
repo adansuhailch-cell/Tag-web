@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tag web.css">
+    <title>ultimate Html:5 form Tags</title>
+</head>
+
+<body>
+    <header>
+        <h1>All Form tags</h1>
+        <a href="../tag web.html" style="color:black; text-decoration: none;">⬅ Back to Main Page</a>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search tag..." onkeyup="searchTag()">
+        </div>
+    </header>
+
+    <section id="Form tags">
+        <h2>Form Tags</h2>
+        <div class="tag-card" onclick="openModal('form')">&lt;form&gt;<span class="tooltip">Click for datails</span>To
+            make forms</div>
+        <div class="tag-card" onclick="openModal('input')">&lt;input&gt;<span class="tooltip">Click for datails</span>
+            Input Field</div>
+        <div class="tag-card" onclick="openModal('textarea')">&lt;textarea&gt;<span class="tooltip">Click for
+                datails</span> Text Area</div>
+        <div class="tag-card" onclick="openModal('button')">&lt;button&gt;<span class="tooltip">Click for datails</span>
+            Button</div>
+        <div class="tag-card" onclick="openModal('select')">&lt;select&gt;<span class="tooltip">Click for datails</span>
+            Dropdown List</div>
+        <div class="tag-card" onclick="openModal('option')">&lt;option&gt;<span class="tooltip">Click for datails</span>
+            Option</div>
+        <div class="tag-card" onclick="openModal('label')">&lt;label&gt;<span class="tooltip">Click for datails</span>
+            Label</div>
+        <div class="tag-card" onclick="openModal('fieldset')">&lt;fieldset&gt;<span class="tooltip">Click for
+                datails</span> Fieldset</div>
+        <div class="tag-card" onclick="openModal('legend')">&lt;legend&gt;<span class="tooltip">Click for datails</span>
+            Legend</div>
+        <div class="tag-card" onclick="openModal('datalist')">&lt;datalist&gt;<span class="tooltip">Click for
+                datails</span> Data List</div>
+        <div class="tag-card" onclick="openModal('output')">&lt;output&gt;<span class="tooltip">Click for datails</span>
+            Output</div>
+        <div class="tag-card" onclick="openModal('optgroup')">&lt;optgroup&gt; <span class="tooltip">Click for
+                details</span></div>
+        <div class="tag-card" onclick="openModal('progress')">&lt;progress&gt;<span class="tooltip">Click for
+                details</span></div>
+        <div class="tag-card" onclick="openModal('meter')">&lt;meter&gt;<span class="tooltip">Click for details</span>
+        </div>
+    </section>
+    <script src="../js/form-tag.js"></script>
+
+    <!-- Modal -->
+    <div id="modal" style="display:none;">
+        <div id="modal-content">
+            <span id="close-modal" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Tag Name</h3>
+            <p id="modal-history">History & Modern Use</p>
+
+            <h4>Example Code (Editable)</h4>
+            <textarea id="modal-editor"></textarea><br>
+            <button class="run-btn" onclick="runLiveCode()">Run Code</button>
+            <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+
+            <iframe id="live-preview"></iframe>
+
+            <div class="quiz-section" id="quiz">
+                <h4>Quiz:</h4>
+                <p id="quiz-question"></p>
+                <input type="text" id="quiz-answer" placeholder="Type your answer here">
+                <button class="quiz-btn" onclick="checkAnswer()">Check Answer</button>
+                <p id="quiz-feedback"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

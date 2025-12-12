@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tag web.css">
+    <title>Html:5 semantic-media Tags</title>
+</head>
+
+<body>
+    <header>
+        <h1>Semantic & Media Tags</h1>
+        <a href="../tag web.html" style="color:black; text-decoration: none;">⬅ Back to Main Page</a>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search tag..." onkeyup="searchTag()">
+        </div>
+    </header>
+    <!-- Media tags -->
+    <section id="media">
+        <h2>Media Tags</h2>
+        <div class="tag-card" onclick="openModal('video')">&lt;video&gt;<span class="tooltip">Click for details</span>
+            Video
+        </div>
+        <div class="tag-card" onclick="openModal('source')">&lt;source&gt;<span class="tooltip">Click for details</span>
+            Media Source</div>
+        <div class="tag-card" onclick="openModal('track')">&lt;track&gt;<span class="tooltip">Click for details</span>
+            Text
+            Tracks</div>
+        <div class="tag-card" onclick="openModal('figure')">&lt;figure&gt;<span class="tooltip">Click for details</span>
+            Figure</div>
+        <div class="tag-card" onclick="openModal('figcaption')">&lt;figcaption&gt;<span class="tooltip">Click for
+                details</span> Figure Caption</div>
+    </section>
+    <!-- Semantic tags -->
+    <section id="Semantic Tags">
+        <h2>Semantic tags(modern HTML5)</h2>
+        <div class="tag-card" onclick="openModal('nav')">&lt;nav&gt;<span class="tooltip">Click for details</span>
+            Navigation</div>
+        <div class="tag-card" onclick="openModal('section')">&lt;section&gt;<span class="tooltip">Click for
+                details</span>
+            Section</div>
+        <div class="tag-card" onclick="openModal('article')">&lt;article&gt;<span class="tooltip">Click for
+                details</span>
+            Article</div>
+        <div class="tag-card" onclick="openModal('aside')">&lt;aside&gt;<span class="tooltip">Click for details</span>
+            Aside tag
+        </div>
+        <div class="tag-card" onclick="openModal('main')">&lt;main&gt;<span class="tooltip">Click for details</span>
+            Main
+            Content</div>
+        <div class="tag-card" onclick="openModal('div')">&lt;div&gt;<span class="tooltip">Click for details</span>
+            Division
+        </div>
+        <div class="tag-card" onclick="openModal('span')">&lt;span&gt;<span class="tooltip">Click for details</span>
+            Span
+        </div>
+        <div class="tag-card" datav-tag="header" onclick="openModal('header')">&lt;header&gt;<span class="tooltip">Click
+                for details</span>header</div>
+        <div class="tag-card" data-tag="address" onclick="openModal('address')">&lt;address&gt;<span
+                class="tooltip">Click for details</span>address</div>
+        <div class="tag-card" data-tag="time" onclick="openModal('time')">&lt;time&gt;<span class="tooltip">Click for
+                details</span>time</div>
+
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" style="display:none;">
+        <div id="modal-content">
+            <span id="close-modal" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Tag Name</h3>
+            <p id="modal-history">History & Modern Use</p>
+
+            <h4>Example Code (Editable)</h4>
+            <textarea id="modal-editor"></textarea><br>
+            <button class="run-btn" onclick="runLiveCode()">Run Code</button>
+            <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+
+            <iframe id="live-preview"></iframe>
+
+            <div class="quiz-section" id="quiz">
+                <h4>Quiz:</h4>
+                <p id="quiz-question"></p>
+                <input type="text" id="quiz-answer" placeholder="Type your answer here">
+                <button class="quiz-btn" onclick="checkAnswer()">Check Answer</button>
+                <p id="quiz-feedback"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/semantic-media tags.js"></script>
+</body>
+
+</html>
